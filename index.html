@@ -1,0 +1,64 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h2 class="btn btn-default heading" style="font-family: cursive;">Image Recognition</h2>
+      <br><br>
+
+      <p style="font-size: 24px;" id="Model-Para">Model is trained to identify the following objects: </p>
+
+      <b class="objects"> 
+        1. Bottle
+        <hr>
+        2. Notebook
+        <hr>
+        3. Comb
+        <hr>
+        4. Pen
+        <hr>
+        5. Powder
+        <hr>
+      </b>
+
+      <label style="font-size: 20px;">Webcam View - </label>
+      <div id="camera"></div>
+
+      <br><br>
+      <h4 style="font-weight: bold;"> Click on the Button to Capture the Image - <span onclick="capture()" class="btn btn-info"> Capture Image  </span> </h4>
+
+      <br><br>
+
+      <label style="font-size: 20px;">Captured Image</label>
+      <div id="captured_img"></div>
+
+    
+      <br><br>
+      <h4 style="font-weight: bold;"> Click on the Button to Identify the Image - <span  onclick="identify_img()" class="btn btn-success">Identify Image  </span> </h4>
+      <br><br>
+
+      <p style="font-size: 22px; font-weight: bold;"> Object : <span id="object_name"></span> </p>
+      <p style="font-size: 22px; font-weight: bold; padding-bottom: 20px;"> Accuracy : <span id="object_accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

@@ -1,0 +1,35 @@
+body {
+    color: black;
+    background-image: linear-gradient(to top, #ffffff, #f31370);
+}
+
+.heading {
+    width: 85%;
+    font-size: 30px;
+}
+
+.objects {
+    color: white;
+    font-size: 18px;
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#camera, #captured_img {
+    border: 3px dotted black; 
+    width: 375px;
+    height: 300px;
+}
+
+#object_name, #object_accuracy {
+    color: darkblue;
+}
+
+#Model-Para { 
+    background-color: cornsilk;
+
+}
+
+
+
